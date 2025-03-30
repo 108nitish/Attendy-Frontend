@@ -1,0 +1,152 @@
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background: #364164;
+    color: white;
+    transition: transform 0.3s ease-in-out; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1100;
+}
+
+.sidebar.open {
+    left: 0;
+}
+ 
+.menu-btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: #81decbb3;
+    color: black;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+    z-index: 1200;
+    border-radius: 5px;
+    display: none; 
+}
+
+.create-cls-btn{
+    height: 50px;
+    width : 90%;
+    background: rgb(106, 195, 194);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: 800;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 600;
+}
+
+.create-cls-btn span{
+    width:30px;
+    height:30px;
+    background: white;
+    color: black;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.classes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;   
+    overflow-y: scroll;
+    height: 55vh; 
+}
+
+.class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    cursor: pointer; 
+    font-size: large;
+    font-weight: 700;
+}
+
+.heading{ 
+    font-weight: 800;
+    background-image: linear-gradient(to right, #00DBDE, #bb0035);
+    background-clip: text; 
+    color: transparent;
+}
+
+.logout{
+    width : 180px; 
+    bottom: 30px;
+    left: 30px;
+    height : 40px;
+    background: #f44336;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.material-symbols-outlined{
+    width:30px;
+    height:30px;
+    background: white;
+    color: red;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.footer-main{
+    bottom : 0;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .sidebar {
+        left: -290px;  
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+}

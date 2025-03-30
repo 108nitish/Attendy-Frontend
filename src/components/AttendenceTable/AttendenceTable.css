@@ -1,0 +1,161 @@
+.right-bar, .empty-heading{ 
+    margin-left: 270px;  
+    padding: 20px; 
+}
+
+.right-bar{
+    display : flex;
+    flex-direction: column;
+    align-items:start; 
+}
+
+.class-header{
+    width: 100%;
+    height : 10vh;
+    display : flex;
+    justify-content: space-around;
+    align-items: center; 
+    gap: 8vw;
+    
+}
+
+.cls-photo{
+    display : flex;
+    height: 50px;
+    padding : 10px 20px;
+    justify-content : center;
+    align-items:center;
+    border : 2px solid green;
+    font-size : large;
+    font-weight : 700;
+    border-radius : 50px;
+    background-color : #81decbb3;
+}
+ 
+.cls-photo span{
+    color : green;
+}
+
+.register-stu{
+    display : flex;
+    height: 50px;
+    padding : 10px 20px;
+    justify-content : center;
+    align-items:center;
+    border : 2px solid green;
+    font-size : large;
+    font-weight : 700;
+    border-radius : 50px;
+    background-color : #81decbb3;
+}
+
+.register-stu span{
+    color : green;
+}
+
+.del-cls{
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cls-name { 
+    font-size: 30px;
+    color: #2c3e50;
+    margin-bottom: 15px; 
+    font-weight: 800;
+    background-image: linear-gradient(to right, #00DBDE, #bb0035);
+    background-clip: text; 
+    color: transparent; 
+}
+
+.table-container{
+    padding : 20px; 
+}
+ 
+.table-wrapper {
+    width: 100%;
+    overflow: auto;  
+    max-height: 65vh; 
+    max-width: 100vw;
+    border: 1px solid #ddd;
+    position: relative;
+}
+ 
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center; 
+}
+
+.attendance-table th, 
+.attendance-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    white-space: nowrap; 
+} 
+ 
+.attendance-table thead {
+    position: sticky;
+    top: 0;
+    background-color: #16a085;
+    color: white;
+    z-index: 100;
+}
+ 
+.attendance-table th:first-child, 
+.attendance-table td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: white;
+    z-index: 50;
+}
+
+.attendance-table th:nth-child(2), 
+.attendance-table td:nth-child(2) {
+    position: sticky;
+    left: 80px; 
+    background-color: white;
+    z-index: 50;
+}
+ 
+.roll-no-h, .names-h { 
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+.dates {
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+}
+
+.roll-no {
+    font-weight: bold;
+    background-color: #ecf0f1;
+}
+
+.stu-name {
+    font-weight: bold;
+    background-color: #d5dbdb;
+}
+ 
+.h input {
+    transform: scale(1.2);
+    cursor: pointer;
+} 
+
+@media screen and (max-width: 768px) { 
+    .right-bar, .empty-heading {
+        margin-left: 0;
+        padding: 10px;
+    } 
+    .table-wrapper {
+        max-height: 70vh;
+        max-width: 90vw;
+    }
+}
