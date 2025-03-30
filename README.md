@@ -47,13 +47,7 @@ npm run build
 ```sh
 npm run preview
 ```
-
-## 🔑 Environment Variables
-Create a `.env` file in the root directory and add the following variables:
-```env
-VITE_API_BASE_URL=http://localhost:5000  # Change this to your backend URL
-VITE_JWT_SECRET=your_jwt_secret  # Used for authentication
-```
+ 
 
 ## 📂 Project Structure
 ```
